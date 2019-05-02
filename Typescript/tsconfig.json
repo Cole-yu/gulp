@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        // "target": "es5",
+        "target": "es2015",//ES6
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "moduleResolution":"node",
+        "allowJs": true,
+        "outDir": "./build"
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

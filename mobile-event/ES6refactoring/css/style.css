@@ -1,0 +1,229 @@
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td, ol, ul, li, img, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+img {
+	border: 0 none;
+	vertical-align: top;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+body {
+	color: #363636;
+	word-wrap: break-word;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 7.5rem;
+	height: 100%;
+	font-size: 12px;
+	line-height: 1.42857;
+	overflow: hidden;
+	font-family: Helvetica Neue, Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+/* 红变黄 */
+img {
+	border: none;
+}
+
+* {  
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;      
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    user-select: none;  
+}
+
+/* 图片没框 */
+.main {
+	margin: 0 auto;
+	width: 7.5rem;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.page_01 {
+	width: 7.5rem;
+	height: 2.78rem;
+	background-image: url(../images/page_01.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.page_02 {
+	width: 7.5rem;
+	height: 2.45rem;
+	background-image: url(../images/page_02.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.page_03 {
+	width: 7.5rem;
+	height: 6.85rem;
+	background-image: url(../images/page_03.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+
+#life{
+	position: absolute;
+	left:0.3rem;
+	top:0.3rem;
+}
+
+.life{
+	width: 0.48rem;
+	height: 0.49rem;
+	background-image: url(../images/life.png);
+	background-size: 100% 100%;	
+}
+#life-time{
+	position: absolute;
+	left:0.6rem;
+	top: 0;	
+	color: white;
+	font-size: 0.3rem;	
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+#music{
+	position: absolute;
+	left: 6.3rem;
+	top: 0.1rem;
+	width: 1.08rem;
+	height: 1.08rem;
+	background-image: url(../images/music_bg.png);
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aux{
+	display: none;
+	background-image:url("../images/music.png") ;
+	background-size:100% 100%;
+	width: 0.18rem;
+	height: 0.3rem;
+	position: absolute;
+	left:0.43rem;
+	top: 0.36rem;
+}
+
+/*音乐播放旋转*/
+.rotate{
+	animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate
+{
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.music{
+	width: 0.36rem;
+	height: 0.59rem;
+	background-image: url(../images/music.png);
+	background-size: 100% 100%;
+	z-index: 99;
+}
+
+#controls_bg{
+	position: absolute;
+	left: 4.45rem;
+	top: 7.65rem;
+	width: 3.01rem;
+	height: 3.01rem;
+	background-image: url(../images/controls_bg.png);
+	background-size: 100% 100%;
+}
+
+#countZero{
+	position: absolute;
+	left: 3.1rem;
+	top: 0.7rem;
+	width: 1.4rem;
+	height: 1.38rem;
+	background-image: url(../images/countTime.png);
+	background-size: 100% 100%;
+	font-size: 0.8rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #666666;
+}
+
+#controls{
+	position: absolute;
+	left:5rem;
+	top: 8.2rem;
+	width: 1.92rem;
+	height: 1.92rem;
+	background-image: url(../images/controls.png);
+	background-size: 100% 100%;
+}
+#circle{
+	position: absolute;	
+	background-image: url(../images/circle.png);
+	background-size: 100% 100%;
+	margin:auto;
+	width: 0.5rem;
+	height: 0.5rem;	
+	left:0.71rem;
+	top: 0.71rem;
+}
+
+#soccer{
+	position: absolute;	
+	background-image: url(../images/soccer.png);
+	background-size: 100% 100%;
+	margin:auto;
+	width: 1.4rem;
+	height: 1.4rem;	
+	left:3.1rem;
+	top: 10.2rem;
+}
+#goalie{
+	background-image: url(../images/guardStand.png);
+	background-size: 100% 100%;
+	width:2.26rem;
+	height: 2.6rem;	
+	position: absolute;
+	left:2.7rem;
+	top: 4rem;
+}
+
+.message{
+	display: none;
+	font-size: 0.4rem;	
+	font-weight: bold;
+	position: absolute;
+	left:2rem;
+	top:2.2rem;	
+	padding: 0.15rem 0.25rem;
+	border-radius: 5px;
+}

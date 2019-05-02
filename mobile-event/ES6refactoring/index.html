@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>足球活动</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" >
+	<meta name="apple-touch-fullscreen" content="yes">
+	<!-- build:css-->	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<!-- endbuild -->
+</head>
+<body scoll=no>
+	<div class="main scroll">		
+		<div class="page_01"></div>
+		<div class="page_02"></div>
+		<div class="page_03"></div>
+		<div id="life">
+			<div class="life"></div>
+			<div id="life-time">X&nbsp;<span id="lifeTimeto" style="font-size:0.4rem;">0</span></div>
+		</div>
+		<div id="music">
+			<div class="music"></div>
+			<div class="aux" id="aux1"></div>
+			<div class="aux" id="aux2"></div>
+			<div class="aux" id="aux3"></div>
+		</div>
+		<div id="countZero">60</div>
+		<div id='goalie'></div>
+		<div id="controls_bg"></div>
+		<div id="controls">
+			<div id="circle"></div>
+		</div>
+
+		<div id="soccer"></div>	
+		<div id="success" class="message" style="background:#5bb85d;color: white;">进球了！`(*∩_∩*)</div>
+		<div id="failure" class="message" style="background:#d9544f;color: white;">再接再厉!(ง •_•)ง</div>			
+		<div id="opposite" class="message" style="background:#d9544f;color: white;">方向踢反了(￣▽￣|||)</div>
+		<div id="digression" class="message" style="background:#d9544f;color: white;">把球踢偏了(〒▽〒) </div>
+		<div id="info" class="message" style="background:#efad4d;color: white;">力量太小了，下次要给力了!╮(╯▽╰)╭</div>
+		<!--载入动画界面-->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+		<div class="load_title">
+			正在加载页面<br>
+			<span>V1.0</span>
+		</div>
+	</div>
+	</div>
+	
+	<!-- build:js-->	
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>	
+	<script type="text/javascript" src="js/wap.js"></script>	
+	<script type="text/javascript" src="js/football.js"></script>
+	<script src="js/loader.js" type="text/javascript" ></script>
+	<!-- endbuild-->
+</body>
+</html>

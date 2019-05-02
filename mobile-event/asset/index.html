@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>足球活动</title>
+	<meta name="Robots" content="All" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="width" />	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="apple-touch-fullscreen" content="yes">
+	<!-- build:css-->	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<!-- endbuild -->
+</head>
+<body scoll=no>
+	<div class="main scroll">		
+		<div class="page_01"></div>
+		<div class="page_02"></div>
+		<div class="page_03"></div>
+		<div id="life">
+			<div class="life"></div>
+			<div id="life-time">X&nbsp;<span id="lifeTimeto" style="font-size:0.4rem;">0</span></div>			
+		</div>
+		<div id="music">
+			<div class="music"></div>
+			<div class="aux" id="aux1"></div>
+			<div class="aux" id="aux2"></div>
+			<div class="aux" id="aux3"></div>
+		</div>
+		<div id="countZero">90</div>		
+		<div id='goalie'></div>
+		<div id="controls_bg"></div>
+		<div id="controls">
+			<div id="circle"></div>
+		</div>
+
+		<div id="soccer"></div>	
+		<div id="success" class="message" style="background:#5bb85d;color: white;">进球了！</div>
+		<div id="failure" class="message" style="background:#d9544f;color: white;">接住球了!</div>			
+		<div id="opposite" class="message" style="background:#d9544f;color: white;">方向踢反了</div>
+		<div id="digression" class="message" style="background:#d9544f;color: white;">踢偏了！ </div>
+		<div id="info" class="message" style="background:#efad4d;color: white;">踢得给力点!</div>
+		<!--载入动画界面-->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div id="enterBtn"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<div id="bootstrap">
+			<div id="tips">
+				<p>用手指按住圈内圆点</p>
+				<p>选择方向再松开即可射门</p>
+				<p>越往外射门力度越大</p>
+				<p style="color:tomato; font-size: 0.35rem;margin-top: 0.15rem;font-weight: bold;">
+					90秒内射进5球<br>
+					即可获得神秘大礼				
+				</p>
+			</div>
+			<div id="arrow"></div>
+			<div id="bootControl"></div>
+			<div id="hand"></div>
+		</div>	
+
+		<div class="bgModal">
+			<div id="modal">
+				<div id="continue">继续踢球</div>
+				<div class="weixin">
+					助理微信<span id="cpLink" class="qq-groupNo">ytx71602</span>已复制成功
+				</div>				
+				<div class="btn" data-clipboard-action="copy" data-clipboard-target="#cpLink"></div>
+			</div>
+			<div class="close"></div>
+		</div>
+	</div>
+
+	
+	<!-- build:js-->	
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/clipboard.min.js"></script>	
+	<script type="text/javascript" src="js/wap.js"></script>	
+	<script type="text/javascript" src="js/football.js"></script>
+	<script type="text/javascript" src="js/loader.js"></script>
+	<!-- endbuild-->
+
+	<script type="text/javascript">
+		var clipboard = new Clipboard('.btn');
+		clipboard.on('success', function(e) {
+			console.log(e);
+		});
+		clipboard.on('error', function(e) {
+			console.log(e);
+		});
+		$(".btn").click(function(){
+			window.location.href="weixin://";			
+		});
+
+		$(".close").click(function(){
+			$(".bgModal").hide();
+			startTime();
+		});
+		$("#continue").click(function(){
+			$(".bgModal").hide();
+			startTime();
+		});
+	</script>
+</body>
+</html>
